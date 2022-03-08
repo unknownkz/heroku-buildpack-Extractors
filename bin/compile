@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "-----> Install Extractors (p7zip[full-rar], unzip)."
+echo "-----> Install Extractors (p7zip[full-rar])."
 
 BUILD_DIR=$1
 BASE_DIR="$PWD"
