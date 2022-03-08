@@ -7,11 +7,10 @@ BASE_DIR="$PWD"
 VENDOR_DIR="vendor"
 PACKAGE_NAME="extractors"
 PROFILE_PATH="${BUILD_DIR}/.profile.d/${PACKAGE_NAME}.sh"
-url=(p7zipf p7zipr unzip)
+url=(p7zipf p7zipr)
 declare -A urls=(
 	[p7zipf]="http://archive.ubuntu.com/ubuntu/pool/universe/p/p7zip/p7zip-full_16.02+dfsg-7build1_amd64.deb"
 	[p7zipr]="http://archive.ubuntu.com/ubuntu/pool/multiverse/p/p7zip-rar/p7zip-rar_16.02-3build1_amd64.deb"
-	[unzip]="http://archive.ubuntu.com/ubuntu/pool/main/u/unzip/unzip_6.0-25ubuntu1_amd64.deb"
 )
 
 mkdir -p "${BUILD_DIR}/${VENDOR_DIR}/${PACKAGE_NAME}" && cd "$_" || exit 1
